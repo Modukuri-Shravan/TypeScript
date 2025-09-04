@@ -34,7 +34,7 @@ const myTaskStatus = TaskStatus.InProgress;
 console.log(`Initial Status: ${TaskStatus[myTaskStatus]}`); // Output: Initial Status: InProgress
 
 // Call the function with an enum value
-printTaskStatus(myTaskStatus);
+// printTaskStatus(myTaskStatus);
 
 console.log("--- Changing status ---");
 
