@@ -81,3 +81,37 @@ class Car implements Vehicle {
 const car = new Car();
 car.start(); // Car started
 car.stop();  // Car stopped
+
+
+// Example 4: A custom object
+interface User {
+  id: number;
+  name: string;
+}
+
+const myUserr: User = { id: 1, name: "Alice" };
+const returnedUserr = identity<User>(myUser);
+console.log(`The type is a custom interface 'User'. Value:`, returnedUser);
+
+
+class BankAccountt {
+  public accountNumber: string;
+  private balance: number;
+
+  constructor(accountNumber: string, initialBalance: number) {
+    this.accountNumber = accountNumber;
+    this.balance = initialBalance;
+  }
+
+  deposit(amount: number): void {
+    this.balance += amount;
+  }
+
+  getBalance(): number {
+    return this.balance;
+  }
+}
+
+const accountt = new BankAccount("123ABC", 1000);
+account.deposit(500);
+console.log(account.getBalance()); // Output: 1500
