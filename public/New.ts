@@ -33,3 +33,21 @@ class Dog extends Animal {
 const dog = new Dog("Rex");
 dog.makeSound(); // Rex makes a sound.
 dog.bark();      // Rex barks.
+
+
+abstract class Shape {
+  abstract getArea(): number;
+}
+
+class Rectangle extends Shape {
+  constructor(private width: number, private height: number) {
+    super();
+  }
+
+  getArea(): number {
+    return this.width * this.height;
+  }
+}
+
+const rect = new Rectangle(10, 5);
+console.log(rect.getArea()); // Output: 50
