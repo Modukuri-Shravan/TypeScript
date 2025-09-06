@@ -1,5 +1,9 @@
-// let captain = "Dhoni"
+const person = {
+  name: "John",
+  age: 25,
+  greet() {
+    console.log("Hi, I'm " + this.name);
+  }
+};
 
-// captain = 45
-
-// captain = true
+person.greet(); // Hi, I'm John
