@@ -1,5 +1,5 @@
-let captain = "Dhoni"
+// let captain = "Dhoni"
 
-captain = 45
+// captain = 45
 
-captain = true
+// captain = true

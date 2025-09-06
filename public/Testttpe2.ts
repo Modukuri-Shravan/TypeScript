@@ -31,3 +31,26 @@ interface User {
 const myUser: User = { id: 1, name: "Alice" };
 const returnedUser = identity<User>(myUser);
 console.log(`The type is a custom interface 'User'. Value:`, returnedUser);
+
+
+class BankAccount {
+  public accountNumber: string;
+  private balance: number;
+
+  constructor(accountNumber: string, initialBalance: number) {
+    this.accountNumber = accountNumber;
+    this.balance = initialBalance;
+  }
+
+  deposit(amount: number): void {
+    this.balance += amount;
+  }
+
+  getBalance(): number {
+    return this.balance;
+  }
+}
+
+const account = new BankAccount("123ABC", 1000);
+account.deposit(500);
+console.log(account.getBalance()); // Output: 1500

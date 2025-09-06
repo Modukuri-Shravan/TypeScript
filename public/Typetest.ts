@@ -52,9 +52,9 @@ manager.addProduct(keyboard);
 manager.listAllProducts();
 
 // Find a specific product by its ID
-const foundProduct = manager.getProductById(1);
-if (foundProduct) {
-  console.log(`Found product with ID 1: ${foundProduct.name}`);
-} else {
-  console.log("Product not found.");
-}
+// const foundProduct = manager.getProductById(1);
+// if (foundProduct) {
+//   console.log(`Found product with ID 1: ${foundProduct.name}`);
+// } else {
+//   console.log("Product not found.");
+// }
