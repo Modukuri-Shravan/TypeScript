@@ -51,3 +51,14 @@ class Rectangle extends Shape {
 
 const rect = new Rectangle(10, 5);
 console.log(rect.getArea()); // Output: 50
+
+
+class MathHelper {
+  static PI = 3.14159;
+
+  static circleArea(radius: number): number {
+    return MathHelper.PI * radius * radius;
+  }
+}
+
+console.log(MathHelper.circleArea(5)); // Output: 78.53975
