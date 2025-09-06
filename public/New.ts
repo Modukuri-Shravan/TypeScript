@@ -62,3 +62,22 @@ class MathHelper {
 }
 
 console.log(MathHelper.circleArea(5)); // Output: 78.53975
+
+interface Vehicle {
+  start(): void;
+  stop(): void;
+}
+
+class Car implements Vehicle {
+  start(): void {
+    console.log("Car started");
+  }
+
+  stop(): void {
+    console.log("Car stopped");
+  }
+}
+
+const car = new Car();
+car.start(); // Car started
+car.stop();  // Car stopped
